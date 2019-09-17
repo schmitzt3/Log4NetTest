@@ -31,7 +31,7 @@ namespace Log4NetTest
 				});
 
 				configurator.UseLog4Net("log4net.config", true);
-				configurator.RunAsLocalService();
+				configurator.RunAsLocalSystem();
 				configurator.OnException(exception => Logger.Error("An unhandled exception occurred in Log4NetTest: ", exception));
 				configurator.SetDescription("Test log4net integration");
 				configurator.SetDisplayName("Log4NetTest");
