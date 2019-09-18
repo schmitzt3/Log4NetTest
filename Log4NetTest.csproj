@@ -8,6 +8,9 @@
   <ItemGroup>
     <PackageReference Include="Autofac" Version="4.9.4" />
     <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="3.0.0-rc1.19456.10" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="3.0.0-rc1.19456.10" />
     <PackageReference Include="Topshelf" Version="4.2.1" />
     <PackageReference Include="Topshelf.Log4Net" Version="4.2.1" />
   </ItemGroup>

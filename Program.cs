@@ -1,14 +1,12 @@
 ﻿using Autofac;
-using log4net;
 using Log4NetTest.Autofac;
+using Microsoft.Extensions.Logging;
 using Topshelf;
 
 namespace Log4NetTest
 {
 	internal class Program
 	{
-		private static readonly ILog Logger = LogManager.GetLogger(typeof(Program));
-
 		private static void Main()
 		{
 			HostFactory.Run(configurator =>
@@ -30,14 +28,10 @@ namespace Log4NetTest
 					settings.WhenStopped((manager, control) => manager.Stop(control));
 				});
 
-				configurator.UseLog4Net("log4net.config", true);
 				configurator.RunAsLocalSystem();
-				configurator.OnException(exception => Logger.Error("An unhandled exception occurred in Log4NetTest: ", exception));
 				configurator.SetDescription("Test log4net integration");
 				configurator.SetDisplayName("Log4NetTest");
 				configurator.SetServiceName("Log4NetTest");
-
-				Logger.Debug("Logging Program - Main");
 			});
 		}
 	}

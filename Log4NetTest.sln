@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29230.61
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Log4NetTest", "Log4NetTest.csproj", "{1DF2D670-42D3-48FA-90F8-C6B03FB0A65A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Log4NetTest", "Log4NetTest.csproj", "{1DF2D670-42D3-48FA-90F8-C6B03FB0A65A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerServiceTest", "..\WorkerServiceTest\WorkerServiceTest.csproj", "{92CF8E3D-178A-4A1B-A894-C6E32FE959EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{1DF2D670-42D3-48FA-90F8-C6B03FB0A65A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1DF2D670-42D3-48FA-90F8-C6B03FB0A65A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1DF2D670-42D3-48FA-90F8-C6B03FB0A65A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92CF8E3D-178A-4A1B-A894-C6E32FE959EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92CF8E3D-178A-4A1B-A894-C6E32FE959EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92CF8E3D-178A-4A1B-A894-C6E32FE959EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92CF8E3D-178A-4A1B-A894-C6E32FE959EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
